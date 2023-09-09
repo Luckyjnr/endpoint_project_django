@@ -5,8 +5,8 @@ import datetime
 
 # Create your views here.
 def get_endpoint_data(request):
-    slack_name = request.GET.get('Lucky kelimu')
-    track = request.GET.get('Backend')
+    slack_name = request.GET.get('slack_name')
+    track = request.GET.get('track')
     current_day =datetime.datetime.utcnow().strftime('%A')
     utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     github_file_url = "https://github.com/Luckyjnr/Hng_Task1/blob/master/core/views.py"
