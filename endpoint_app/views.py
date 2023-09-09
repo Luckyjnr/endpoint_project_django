@@ -13,10 +13,10 @@ def get_endpoint_data(request):
     github_repo_url = "https://github.com/Luckyjnr/Hng_Task1/tree/master"
 
     response_data = {
-        "slack_name":'lucky kelimu',
+        "slack_name": slack_name,
         "current_day":current_day,
         "utc_time": utc_time,
-        "track":'Backend',
+        "track":track,
         "github_file_url": github_file_url,
         "github_repo_url": github_repo_url,
         "status_code": 200
