@@ -1,0 +1,6 @@
+services:
+  - name: endpoint_app
+    type: web
+    env: python3
+    buildCommand: ./build.sh
+    startCommand: gunicorn endpoint_project.wsgi:application
